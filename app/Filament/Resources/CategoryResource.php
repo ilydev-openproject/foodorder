@@ -23,9 +23,9 @@ class CategoryResource extends Resource
 {
     protected static ?string $model = Category::class;
 
-    protected static ?string $cluster = BukuMenu::class;
-
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+
+    protected static ?string $navigationGroup = 'Buku Menu';
 
     public static function form(Form $form): Form
     {

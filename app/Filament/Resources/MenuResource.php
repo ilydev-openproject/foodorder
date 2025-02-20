@@ -1,34 +1,33 @@
 <?php
 
-namespace App\Filament\Clusters\BukuMenu\Resources;
+namespace App\Filament\Resources;
 
 use Filament\Forms;
 use App\Models\Menu;
 use Filament\Tables;
+use App\Models\Category;
 use Filament\Forms\Form;
 use Filament\Tables\Table;
 use Filament\Resources\Resource;
-use App\Filament\Clusters\BukuMenu;
-use Filament\Forms\Components\Section;
-use Filament\Forms\Components\TextInput;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-use App\Filament\Clusters\BukuMenu\Resources\MenuResource\Pages;
-use App\Filament\Clusters\BukuMenu\Resources\MenuResource\RelationManagers;
-use App\Models\Category;
-use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Select;
-use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
-use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\Section;
 use Filament\Tables\Columns\TextColumn;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\RichEditor;
+use Illuminate\Database\Eloquent\Builder;
+use App\Filament\Resources\MenuResource\Pages;
+use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Filament\Resources\MenuResource\RelationManagers;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
 
 class MenuResource extends Resource
 {
     protected static ?string $model = Menu::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-book-open';
 
-    protected static ?string $cluster = BukuMenu::class;
+    protected static ?string $navigationGroup = 'Buku Menu';
 
     public static function form(Form $form): Form
     {

@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Filament\Clusters\BukuMenu\Resources\MenuResource\Pages;
+namespace App\Filament\Resources\MenuResource\Pages;
 
-use App\Filament\Clusters\BukuMenu\Resources\MenuResource;
+use App\Filament\Resources\MenuResource;
 use Filament\Actions;
 use Filament\Resources\Pages\CreateRecord;
 
