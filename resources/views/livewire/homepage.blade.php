@@ -8,10 +8,11 @@
             <img src="images/shoppingcart.png" class="w-[550px] absolute top-1/2 -translate-y-1/2 -right-12 z-10" alt="">
         </div>
     </div>
+
     <form class="flex items-center max-w-sm mx-auto my-4">
         <label for="simple-search" class="sr-only">Search</label>
         <div class="relative w-full">
-            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-[#F7D158] focus:border-[#F7D158] block w-full pe-10 p-2.5  " placeholder="Cari menu disini ..." required />
+            <input type="text" id="simple-search" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-xl focus:ring-[#F7D158] focus:border-[#F7D158] block w-full pe-10 p-2.5" placeholder="Cari menu di sini ..." required />
             <div class="absolute inset-y-0 end-0 flex items-center pe-3 pointer-events-none">
                 <svg class="w-4 h-4 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 20">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5v10M3 5a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 10a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm0 0V6a3 3 0 0 0-3-3H9m1.5-2-2 2 2 2" />
@@ -19,6 +20,12 @@
             </div>
         </div>
     </form>
-    <livewire:category />
-    <livewire:menu/>
+
+    {{-- Komponen kategori --}}
+    <livewire:category-filter />
+    <h3>Daftar Menu</h3>
+    <p>Selected Category: {{ $selectedCategory }}</p>
+    {{-- Komponen menu dengan daftar menu yang sudah difilter --}}
+    <livewire:menu-show :menus="$menus" />
+
 </section>

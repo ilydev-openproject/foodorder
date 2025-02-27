@@ -1,7 +1,7 @@
 <nav>
     <div class="navtop flex flex-row justify-between items-center p-4">
         <div class="navtop-left ">
-            <a href="/" class="flex flex-row justify-start items-center">
+            <a href="/{id}" class="flex flex-row justify-start items-center">
                 <div class="icon bg-gray-100 p-2 rounded-full">
                     <svg height="auto" width="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                         viewBox="0 0 346.693 346.693" xml:space="preserve">

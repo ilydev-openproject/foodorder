@@ -12,5 +12,4 @@ Route::get('/', function () {
 Route::get('/test', TestComponent::class);
 
 Route::get('/', Homepage::class);
-Route::get('/{id}', Homepage::class);
-Route::get('/{id}/{any}', Homepage::class);
+Route::get('/{slug}', Homepage::class);
