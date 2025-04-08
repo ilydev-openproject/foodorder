@@ -23,9 +23,8 @@
 
     {{-- Komponen kategori --}}
     <livewire:category-filter />
-    <h3>Daftar Menu</h3>
-    <p>Selected Category: {{ $selectedCategory }}</p>
-    {{-- Komponen menu dengan daftar menu yang sudah difilter --}}
+    <!-- <h3>Daftar Menu</h3> -->
+    <!-- <p>Selected Category: {{ $selectedCategory }}</p> -->
     <livewire:menu-show :menus="$menus" />
 
 </section>
